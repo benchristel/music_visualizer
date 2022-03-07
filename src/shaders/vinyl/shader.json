@@ -1,0 +1,33 @@
+{
+    "shader_mode": "advanced",
+
+	"initial_window_size":[200,600],
+	"image": {
+		"geom_iters":1,
+		"clear_color":[0,0,0]
+	},
+	"buffers": {
+		"a": {
+			"size": "window_size",
+			"geom_iters":1,
+			"clear_color":[0, 0, 0]
+		},
+		"b": {
+			"size": "window_size",
+			"geom_iters":1,
+			"clear_color":[0, 0, 0]
+		}
+	},
+
+	"render_order":["a", "b"],
+
+	"blend":true,
+
+	"audio_enabled":true,
+	"audio_options": {
+		"fft_sync":true,
+		"xcorr_sync":true,
+		"fft_smooth":1.0,
+		"wave_smooth":0.6
+	},
+}
